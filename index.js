@@ -8,9 +8,9 @@ const PORT = process.env.PORT || 3000; // Obtener el puerto de la variable de en
 console.log(process.env.PORT)
 const app = express();
 const server = http.createServer(app);
-const io = require("socket.io")(server, {
+const io = require("socket.io")(server, { 
   cors: {
-    origin: "https://front-privatechat-g6451ymye-fedeprenollio.vercel.app/", 
+    origin: true, 
     methods: ["GET", "POST"]
   }
 });
