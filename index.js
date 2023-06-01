@@ -21,7 +21,7 @@ app.use(cors());
 // Ruta para unirse a una sala de chat privada
 
 app.get("/hola", (req,res)=>{
-  res.send("prbando")
+  res.send("hola si si")
 })
 
 // Manejar conexiones de sockets
