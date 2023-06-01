@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:5173", 
+    origin: "https://front-privatechat-g6451ymye-fedeprenollio.vercel.app/", 
     methods: ["GET", "POST"]
   }
 });
