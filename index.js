@@ -40,7 +40,10 @@ io.on('connection', (socket) => {
     // Enviar el mensaje a todos los usuarios en la sala
     io.to(code).emit('chat message', message);
   });
+  socket.on( "only chat", (mnjs)=>{
+    io.to(code).emit('only chat', mnjs);
 
+  })
   // Manejar desconexión del socket
   socket.on('disconnect', () => {
     console.log('Un usuario se ha desconectado');
